@@ -1,0 +1,196 @@
+<!DOCTYPE html >
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+ <html>
+        <head>
+            <meta charset="utf-8">
+              <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+                  <script src="js/jquery.js"></script>
+                 <script src="js/jquery.mobile-1.4.5.min.js"></script>
+                 <script src="phonegap.js"></script>
+                 
+
+                 <style type="text/css">
+                    p{
+                        text-align: center;
+
+                    }
+
+                    
+
+                    h3{
+                    	text-align: center;
+                    }
+
+                   </style>
+       
+        <script type ="text/javascript">  
+            
+            var radio = ""
+            function Area()
+            {
+            with (Math) {
+              form.respuesta.value = form.radio.value * form.radio.value * PI
+            }
+            }
+
+
+           var base="";
+           var altura="";
+          function areatri()
+             {
+          with(Math){
+           
+           form1.respuesta.value=(form1.base.value * form1.altura.value)/2
+         
+               }
+ 
+        }
+
+
+
+
+             var base1="";
+           var altura1="";
+          function arearec()
+             {
+          with(Math){
+           
+           form2.respuesta1.value= form2.base1.value * form2.altura1.value
+         
+               }
+ 
+        }
+
+           
+        </script>
+            
+        </head>
+        <body onload="mifuncion()">
+		
+		          <!--////////menu////////////-->
+           
+          <div data-role="page" id="Principal" data-theme="a">
+            <div data-role="header">
+                <p> Varias Transiciones</p>
+        </div>
+        <div data-role="content">
+                <!--h3>Contenido</h3-->
+               <!--a href="#Pagina2" data-role="button" data-transition="slide">Pulsar</a--> 
+				<a href="#Pagina3" data-role="button" data-transition="slide">Obtener area de un circulo</a>
+				<a href="#Pagina4" data-role="button" data-transition="slideup">Obtener area de un triangulo</a>
+                <a href="#Pagina5" data-role="button" data-transition="fade">Obtener area de un rectangulo</a>
+                
+                 
+                 <!-- </div> </div>-->
+            </div>
+            <div data-role="footer">
+                <p>Pie de página</p>
+            </div>
+                    
+                </div>
+          <!--////////final del menu////////////-->
+          
+
+
+				<!--/////empiezan los menus/////////-->
+
+    <div data-role="page" id="Pagina3">
+               <div data-role="header">
+                     <a href="#Principal" data-role="button" data-transition="pop" 
+                        data-add-back-btn="true" data-icon="back">Regresar</a>
+                <p>Página 1</p>
+                
+               </div>
+
+
+               <div data-role="content">
+               <h1> Calcula el area de un triangulo </h1>
+                <form name="form">
+                Introduzca el Radio del circulo
+                  <input TYPE="TEXT" NAME="radio" size="10">
+                  <input TYPE="BUTTON" VALUE="Calcular" onClick=Area()> 
+
+                  El area de este circulo es:
+                  <input type="text" name="respuesta" size="20" border="0">
+
+                  </form>
+              
+               
+               </div>
+                <div data-role="footer">
+                     <p>Datos de contacto</p>
+                     </div>
+                
+                </div>
+
+
+
+    <div data-role="page" id="Pagina4">
+               <div data-role="header">
+                     <a href="#Principal" data-role="button" data-transition="pop" 
+                        data-add-back-btn="true" data-icon="back">Regresar</a>
+                <p>Página 2</p>
+                
+               </div>
+
+
+               <div data-role="content">
+                     <center>  
+  <h1> Calcula el area de un triangulo </h1>
+  <form name="form1">
+      <label>Ingresa la base</label>
+      <input type="text" name="base" size="10"><br/>
+      <label>Ingresa la altura</label>
+      <input type="text" name="altura" size="10">
+      <input type="button" value="calcular" onclick=areatri()>
+      El area de este triangulo es:
+      <input type="text" name="respuesta" size="20" border="0">
+   </form>
+   </center>
+               </div>
+                <div data-role="footer">
+                     <p>Datos de contacto</p>
+                     </div>
+                
+                </div>
+
+                     
+    <div data-role="page" id="Pagina5">
+               <div data-role="header">
+                     <a href="#Principal" data-role="button" data-transition="pop" 
+                        data-add-back-btn="true" data-icon="back">Regresar</a>
+                <p>Página 3</p>
+                
+               </div>
+
+
+               <div data-role="content">
+
+                    <center>  
+  <h1> Calcula el area de un rectangulo </h1>
+  <form name="form2">
+      <label>Ingresa la base</label>
+      <input type="text" name="base1" size="10"><br/>
+      <label>Ingresa la altura</label>
+      <input type="text" name="altura1" size="10">
+      <input type="button" value="calcular" onclick=arearec()>
+      El area de este rectangulo es:
+      <input type="text" name="respuesta1" size="20" border="0">
+   </form>
+   </center>
+
+               </div>
+                <div data-role="footer">
+                     <p>Datos de contacto</p>
+                     </div>
+                
+                </div>
+
+        </body>
+       
+    </html>
+    
